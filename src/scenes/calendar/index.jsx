@@ -35,6 +35,7 @@ const Calendar = () => {
         allDay: selected.allDay,
       });
     }
+    console.log("events : ", currentEvents);
   };
 
   const handleEventClick = (selected) => {
@@ -87,7 +88,7 @@ const Calendar = () => {
                         month: "short",
                         day: "numeric",
                       })} */}
-                      {formatDate(event.start)}
+                      {formatDate(event.end)}
                     </Typography>
                   }
                 />
@@ -112,7 +113,7 @@ const Calendar = () => {
               interactionPlugin,
               listPlugin,
             ]}
-            headerToolbar={{ 
+            headerToolbar={{
               left: "prev,next today",
               center: "title",
               right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",

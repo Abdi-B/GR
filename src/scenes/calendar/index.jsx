@@ -111,14 +111,11 @@ const Calendar = () => {
               timeGridPlugin,
               interactionPlugin,
               listPlugin,
-              
             ]}
             headerToolbar={{
               left: "prev,next today",
               center: "title",
               right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
-              
-             
             }}
             initialView="dayGridMonth"
             editable={true}
@@ -128,7 +125,6 @@ const Calendar = () => {
             select={handleDateClick}
             eventClick={handleEventClick}
             eventsSet={(events) => setCurrentEvents(events)}
-           
             initialEvents={[
               {
                 id: "12315",

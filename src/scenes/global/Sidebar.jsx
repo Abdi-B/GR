@@ -51,7 +51,7 @@ const Sidebar = () => {
   return (
     <Box
       backgroundColor={colors.primary[400]}
-      height="135%"
+      height="150%"
       // width="20%"
       // sx={{
       //   "& .pro-sidebar-inner": {
@@ -79,7 +79,7 @@ const Sidebar = () => {
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
             style={{
               margin: "10px 0 20px 0",
-              color: colors.grey[100],
+              color: colors.grey[400],
             }}
           >
             {!isCollapsed && (

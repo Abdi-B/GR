@@ -40,6 +40,7 @@ function App() {
               <Route path="/pie" element={<Pie />} />
               <Route path="/line" element={<Line />} />
 
+
               {/* <Route path="/geography" element={<Geography />} /> */}
             </Routes>
           </main>

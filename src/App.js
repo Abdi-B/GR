@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Dashboard from "./scenes/dashboard";
 import Sidebar from "./scenes/global/Sidebar";
 
+
 import Team from "./scenes/Team";
 import Contacts from "./scenes/contacts";
 import Invoices from "./scenes/invoices";
@@ -20,6 +21,7 @@ import Line from "./scenes/line";
 
 function App() {
   const [theme, colorMode] = useMode();
+  
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
